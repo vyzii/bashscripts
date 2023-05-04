@@ -38,10 +38,10 @@ echo "Group created successfully."
 }
 
 usercreate() {
-read -p "Username:" username
-echo "Password:"; read -s password
+read -p "Username: " username
+echo "Password: "; read -s password
 while true; do
-        read -p "Set Custom User ID (UID)?: (y/n)" yn
+        read -p "Set Custom User ID (UID)? (y/n):" yn
         case $yn in
                 [Yy]* ) # yes
                         read -p "Custom UID: " userid
@@ -53,10 +53,10 @@ while true; do
         esac
 done
 while true; do
-        read -p "Set Custom Primary Group?: (y/n)" yn
+        read -p "Set Custom Primary Group? (y/n): " yn
         case $yn in
                 [Yy]* ) # yes
-                        read -p "Custom Primary Group Name:" primarygroup
+                        read -p "Custom Primary Group Name: " primarygroup
                         break;;
                 [Nn]* ) # no
                         break;;
@@ -65,10 +65,10 @@ while true; do
         esac
 done
 while true; do
-        read -p "Set Secondary Group(s)?: (y/n):" yn
+        read -p "Set Secondary Group(s)? (y/n): " yn
         case $yn in
                 [Yy]* ) # yes
-                        read -p "Secondary Group(s): (group1,group2...)" secondarygroup
+                        read -p "Secondary Group(s) (group1,group2...): " secondarygroup
                         break;;
                 [Nn]* ) # no
                         break;;
