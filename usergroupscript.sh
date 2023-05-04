@@ -41,7 +41,7 @@ usercreate() {
 read -p "Username: " username
 echo "Password: "; read -s password
 while true; do
-        read -p "Set Custom User ID (UID)? (y/n):" yn
+        read -p "Set Custom User ID (UID)? (y/n): " yn
         case $yn in
                 [Yy]* ) # yes
                         read -p "Custom UID: " userid
