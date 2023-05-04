@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Author: Hunter Harkness
 # ITEC3328 - Middle GA State University
 
